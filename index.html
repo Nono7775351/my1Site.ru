@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wabsite</title>
+    <title>Website</title>
     <link rel="stylesheet" href="/main.css">
 </head>
 <body>
@@ -20,6 +20,7 @@
                     <li class="btn"><a href="https://rickroll.it/rickroll.mp4">контакты</a></li>
                 </ul>
             </nav>
+
         </header>
         <div class="hero container">
             <div class="hero--info">
@@ -30,6 +31,124 @@
             </div>  
             <img src="img/img1.jpg" alt="">
         </div>
+
+    <div class="contaner tranding">
+        <a href="https://rickroll.it/rickroll.mp4" class="see-all">БОЛЬШЕ МЕМОВ</a>
+        <h3>мемы </h3>
+        <div class="games">
+            <div class="block">
+                <img src="img/mems2.jpg" alt="">
+                <span><img src="img/flame.png" alt="">40kk просмотров</span>
+            </div>
+            <div class="block">
+                <img src="img/mams3.png" alt="">
+                <span><img src="img/flame.png" alt="">40kk просмотров</span>
+            </div>
+            <div class="block">
+                <img src="img/mams4.jpg" alt="">
+                <span><img src="img/flame.png" alt="">40kk просмотров</span>
+            </div>
+            <div class="block">
+                <img src="img/mams5.jpeg" alt="">
+                <span><img src="img/flame.png" alt="">40kk просмотров</span>
+            </div>
+        </div>
     </div>
+    <din class="contaner big-text">
+        <p>учиться программировать по мемам интерестно, и сможет каждый воробей</p>
+    </din>
+    <div class="container banner">
+        <h3>немного о нас</h3>
+        <p>Мы — команда Воробушков, и мы знаем, что лучшие знания усваиваются через смех. С 1596 года учим создавать игры и приложения, объясняя сложные алгоритмы через мемы и гифки. Наша философия: если ты не понял шутку про паттерны проектирования — мы объясним её на котиках. Готовьтесь к тому, что после наших курсов вы будете искать баги с мемным прицелом и писать код с улыбкой до ушей.</p>
+        <img src="img/img2.jpg" alt="">
+    </div>
+    </div>
+
+    <div class="features">
+        <div class="container">
+            <h3>мы учимся программировать на многих платформах</h3>
+            <p>даже на : Piet, Whitespace, Malbolge, LOLCODE </p>
+            <div class="info">
+                <div class="block">
+                    <img src="/img/pyton.png" alt="">
+                    <p>разработка на пайтон</p>
+                    <img src="/img/left.jpg" alt="">
+                </div>
+                <div class="block">
+                    <img src="/img/js.jpeg" alt="">
+                    <p>разработка на JS</p>
+                    <img src="/img/left.jpg" alt="">
+                </div>
+                <div class="block">
+                    <img src="/img/Malbolge.png" alt="">
+                    <p>и даже на Malbolge</p>
+                    <img src="/img/left.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="container projects">
+            <h3>наши ученеки</h3>
+            <p>в нашей академии учились лутшие умы человечиства</p>
+            <div class="imeges">
+                <img src="/img/ilonMask.png" alt="">
+                <img src="/img/tony-stark.jpg" alt="">
+                <img src="/img/mark.jpg" alt="">
+                <img src="/img/Ymnij.jpg" alt="">
+            </div>
+            <a href="https://rickroll.it/rickroll.mp4" class="see-all">больше</a>
+        </div>
+
+        <div class="container email">
+            <h3>почему нужно записаться именно на наши курся?</h3>
+            <P>вам нужно учится у нас потому что мы учим по мемам</P>
+            <div class="block">
+                <div>
+                    <h4>записаться накурс</h4>
+                    <p>введите свою почту, и мы свяжимся с вими</p>
+                </div>
+                <div>
+                    <input type="email" id="emailField" placeholder="введите свою почту">
+                    <button onclick="CheckEmail()">далее</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="blocks container">
+            <div>
+                </span class="logo" >logo</span>
+                <p>воробушки всегда потдержут</p>
+            </div>
+            <div>
+                <h4>о нас</h4>
+                <ul>
+                    <li>портфолио</li>
+                    <li>отзывы</li>
+                    <li>мемы</li>
+                    <li>контакты</li>
+                </ul>
+            </div>
+            <div>
+                <h4>контакты</h4>
+                <p>https://chatgpt.com , https://ya.ru</p>
+                <p>8 800 555 35 35</p>
+            </div>
+        </div>
+        <hr>
+        <p>это тестовый проэкт</p>
+    </footer>
+
+    <script>
+        function CheckEmail() {
+            let email = document.querySelector('#emailField').value;
+            if(!email.includes("@")) alert("Пожалуйста, введите корректный email.");
+            else if(!email.includes(".")) alert("Пожалуйста, введите корректный email.");
+            else alert("Спасибо за регистрацию! Мы свяжемся с вами по почте: " + email);
+        }
+    </script>
 </body>
+
 </html>
