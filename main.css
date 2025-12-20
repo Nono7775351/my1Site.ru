@@ -1,154 +1,379 @@
-<!DOCTYPE html>
-<html lang="ru">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
-    <link rel="stylesheet" href="/main.css">
-</head>
-<body>
-    <div class="wrapper">
-        <header class="container">
-            <spanc lass="logo">logo</span>
-            <nav> 
-                <ul>
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">о нас</a></li>
-                    <li><a href="#">порфолио</a></li>
-                    <li><a href="#">новости</a></li>
-                    <li class="btn"><a href="https://rickroll.it/rickroll.mp4">контакты</a></li>
-                </ul>
-            </nav>
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-        </header>
-        <div class="hero container">
-            <div class="hero--info">
-                <h2>3д игры</h2>
-                <h1>воробушки разработчики</h1>
-                <p>Даже маленький воробей может запустить мини-приложение, если правильно оптимизирует Draw Calls и не забудет про Telegram.WebApp.ready()</p>
-                <button class="btn">больше деталей!</button>
-            </div>  
-            <img src="img/img1.jpg" alt="">
-        </div>
 
-    <div class="contaner tranding">
-        <a href="https://rickroll.it/rickroll.mp4" class="see-all">БОЛЬШЕ МЕМОВ</a>
-        <h3>мемы </h3>
-        <div class="games">
-            <div class="block">
-                <img src="img/mems2.jpg" alt="">
-                <span><img src="img/flame.png" alt="">40kk просмотров</span>
-            </div>
-            <div class="block">
-                <img src="img/mams3.png" alt="">
-                <span><img src="img/flame.png" alt="">40kk просмотров</span>
-            </div>
-            <div class="block">
-                <img src="img/mams4.jpg" alt="">
-                <span><img src="img/flame.png" alt="">40kk просмотров</span>
-            </div>
-            <div class="block">
-                <img src="img/mams5.jpeg" alt="">
-                <span><img src="img/flame.png" alt="">40kk просмотров</span>
-            </div>
-        </div>
-    </div>
-    <din class="contaner big-text">
-        <p>учиться программировать по мемам интерестно, и сможет каждый воробей</p>
-    </din>
-    <div class="container banner">
-        <h3>немного о нас</h3>
-        <p>Мы — команда Воробушков, и мы знаем, что лучшие знания усваиваются через смех. С 1596 года учим создавать игры и приложения, объясняя сложные алгоритмы через мемы и гифки. Наша философия: если ты не понял шутку про паттерны проектирования — мы объясним её на котиках. Готовьтесь к тому, что после наших курсов вы будете искать баги с мемным прицелом и писать код с улыбкой до ушей.</p>
-        <img src="img/img2.jpg" alt="">
-    </div>
-    </div>
+*{
+    margin: 0;
+    padding: 0;
+}
 
-    <div class="features">
-        <div class="container">
-            <h3>мы учимся программировать на многих платформах</h3>
-            <p>даже на : Piet, Whitespace, Malbolge, LOLCODE </p>
-            <div class="info">
-                <div class="block">
-                    <img src="/img/pyton.png" alt="">
-                    <p>разработка на пайтон</p>
-                    <img src="/img/left.jpg" alt="">
-                </div>
-                <div class="block">
-                    <img src="/img/js.jpeg" alt="">
-                    <p>разработка на JS</p>
-                    <img src="/img/left.jpg" alt="">
-                </div>
-                <div class="block">
-                    <img src="/img/Malbolge.png" alt="">
-                    <p>и даже на Malbolge</p>
-                    <img src="/img/left.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="wrapper">
-        <div class="container projects">
-            <h3>наши ученеки</h3>
-            <p>в нашей академии учились лутшие умы человечиства</p>
-            <div class="imeges">
-                <img src="/img/ilonMask.png" alt="">
-                <img src="/img/tony-stark.jpg" alt="">
-                <img src="/img/mark.jpg" alt="">
-                <img src="/img/Ymnij.jpg" alt="">
-            </div>
-            <a href="https://rickroll.it/rickroll.mp4" class="see-all">больше</a>
-        </div>
+body {
+    font-family: "BBH Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
 
-        <div class="container email">
-            <h3>почему нужно записаться именно на наши курся?</h3>
-            <P>вам нужно учится у нас потому что мы учим по мемам</P>
-            <div class="block">
-                <div>
-                    <h4>записаться накурс</h4>
-                    <p>введите свою почту, и мы свяжимся с вими</p>
-                </div>
-                <div>
-                    <input type="email" id="emailField" placeholder="введите свою почту">
-                    <button onclick="CheckEmail()">далее</button>
-                </div>
-            </div>
-        </div>
-    </div>
+a{
+    text-decoration: none;
+}
 
-    <footer>
-        <div class="blocks container">
-            <div>
-                </span class="logo" >logo</span>
-                <p>воробушки всегда потдержут</p>
-            </div>
-            <div>
-                <h4>о нас</h4>
-                <ul>
-                    <li>портфолио</li>
-                    <li>отзывы</li>
-                    <li>мемы</li>
-                    <li>контакты</li>
-                </ul>
-            </div>
-            <div>
-                <h4>контакты</h4>
-                <p>https://chatgpt.com , https://ya.ru</p>
-                <p>8 800 555 35 35</p>
-            </div>
-        </div>
-        <hr>
-        <p>это тестовый проэкт</p>
-    </footer>
+img{
+    max-width: 100%;
+}
 
-    <script>
-        function CheckEmail() {
-            let email = document.querySelector('#emailField').value;
-            if(!email.includes("@")) alert("Пожалуйста, введите корректный email.");
-            else if(!email.includes(".")) alert("Пожалуйста, введите корректный email.");
-            else alert("Спасибо за регистрацию! Мы свяжемся с вами по почте: " + email);
-        }
-    </script>
-</body>
+.wrapper{
+    background: linear-gradient(179deg,rgba(0, 0, 0, 1) 51%, rgba(161, 108, 3, 1) 100%);
+    width: 100%;
+}
 
-</html>
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 50px 0;
+}
+
+header .logo,
+footer .blocks .logo{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+header nav{
+    float: right;
+    width: 50%
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: rgb(255, 255, 255);
+}
+header nav ul li.active::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: rgb(255, 72, 0);
+    border-radius: 10px;
+    position: relative;
+    top: 10px;
+    left: -15px;
+
+}
+
+header nav ul li:not(.active):not(.btn) a:hover{
+    border-bottom:  5px solid rgb(255, 72, 0);
+}
+
+header nav ul li.btn a,
+.email .block button{
+    background: rgb(255, 72, 0) ;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition:all 250ms ease;
+}
+header nav ul li.btn a:hover,
+.email .block button:hover{
+    background: rgb(61, 17, 0) ;
+}
+
+.hero{
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero--info{
+    width: 530px;
+    padding-top: 70px;
+}
+
+.hero--info h2{
+    color: rgb(255, 72, 0);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.hero--info h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.hero--info h1{
+    font-weight: 400;
+    line-height: 170%;
+    margin: 30px 0;
+}
+
+.hero--info .btn{
+    background: rgb(255, 72, 0);
+    color: aliceblue;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: 0;
+    transition: all 500ms ease;
+    font-size: 18px;
+}
+
+.hero--info .btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hero img{
+    position: absolute;
+    top: -80px;
+    right: -200px;
+}
+
+/* секция с играми*/
+
+.tranding{
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.tranding h3{
+    font-weight: 0,700;
+    font-size: 31px;
+}
+
+.tranding .see-all, .projects .see-all{
+    color: aliceblue;
+    background: #25211D;
+    border-radius: 5px;
+    padding: 12px 23px;
+    float: right;
+    display: block;
+    z-index: 2;
+    position: relative;
+    transition: all 500ms ease;
+}
+
+.tranding .see-all:hover, .projects .see-all:hover{
+    transform: scale(1.05);
+}
+
+.tranding .games{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0;
+}
+.tranding .games span{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tranding .games span img{
+    position: relative;
+    top: 5px;
+    margin-right: 7px;
+}
+
+.big-text {
+    padding: 50px 0;
+    font-size: 35px;
+    font-weight: 700px;
+    text-align: center;
+    width: 700px;
+}
+
+.banner {
+    padding: 80px 0;
+}
+
+.banner h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.banner p {
+    line-height: 170%;
+    margin-bottom: 30px;
+    width: 550;
+}
+
+.banner img{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+/* секция с играми*/
+
+.features{
+    background: url("/img/img3.jpg") no-repeat center center fixed;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.features h3,
+.features p{
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffd4d4;
+}
+
+.features h3{
+    font-size: 30px;
+}
+
+.features .info{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features .info .block{
+    text-align: center;
+    width: 20%;
+    margin: 30px 2%;
+    margin-bottom: 15px;
+}
+
+.projects{
+    padding: 100px 0;
+}
+
+.projects h3{
+    font-size: 30px;
+    text-align: center;
+}
+
+.projects p{
+    margin: 40px 0;
+    text-align: center;
+}
+
+.projects .images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.projects .see-all{
+    float: none;
+    width: 60px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*ввод текста*/
+.email{
+    padding-bottom: 120px;
+}
+
+.email h3{
+    margin-top: 60px;
+    font-size: 30px;
+}
+
+.email .block{
+    background: #1C140F;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 40px 3%;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email .block h4{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.email .block p{
+    width: 400px;
+}
+
+.email .block input{
+    background: #ffffff;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    width: 380px;
+    font-family: "BBH Bogle", sans-serif;
+    font-weight: 400;
+    padding: 20px 30px;
+    position: relative;
+    right: -0px;
+    z-index: 1;
+    padding-right: 100px;
+}
+
+.email .block input::placeholder {
+    color: #898989;
+}
+
+.email .block button{
+    cursor: pointer;
+    border: 0;
+    padding: 13px 17px;
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+}
+
+
+footer{
+    background: #000000;
+    padding: 50px 0;
+}
+
+footer .blocks{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .blocks .block p{
+    width: 300px;
+    margin: 15px 0;
+}
+
+footer .blocks .h4{
+    font-weight: 400;
+    font-size: 17px;
+}
+
+footer .blocks ul{
+    list-style: none;
+}
+
+footer .blocks ul li{
+    margin: 10px 0;
+    opacity: 0.8;
+}
+
+footer hr{
+    margin: 30px 0;
+    border: 0;
+    height: 0.6px;
+    background: #cccccc;
+}
+
+footer > p{
+    text-align: center;
+}
